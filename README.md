@@ -21,6 +21,23 @@ Then run commands as you would with [tuya-cli].
 
 ## Examples
 
+### Getting the list of devices associated to an account
+
+    docker run --rm -it omehani/tuya-cli wizard
+	? The API key from tuya.com: XXX
+	? The API secret from tuya.com YYY
+	? Provide a 'virtual ID' of a device currently registered in the app: ZZZ
+	dead3gs75
+	[
+	  {
+		name: 'Light',
+		id: 'ZZZ',
+		key: 'AAA'
+	  },
+      ...
+	]
+
+
 ### Reviving Mirabella GENIO globes
 
 As discussed in rospogrigio/localtuya#445 and rospogrigio/localtuya#491, some
